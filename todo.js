@@ -33,7 +33,7 @@ const todoList = () => {
     let display_list = list.map((item) => {
       let completionStatus = item.completed ? "[x]": "[ ]";
       let displayedDate = item.dueDate === today ? "" : item.dueDate;
-      return `${completionStatus} ${item.title} ${displayedDate}`.trim();
+      return `${completionStatus} ${item.title} ${displayedDate}`;
     });
     let output_string = display_list.join("\n");
     return output_string;
